@@ -5,30 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Jawahar V — Software Engineer based in Chennai, India. Specialising in React, TypeScript, and modern CSS." />
   <title>Jawahar V | Software Engineer</title>
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
   <!-- EmailJS SDK -->
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
+  <!-- ════════════════════════════════════════
+       SCROLL PROGRESS BAR
+  ════════════════════════════════════════ -->
   <div id="progress-bar"></div>
 
-  <!-- ══ NAV ══ -->
+  <!-- ════════════════════════════════════════
+       NAVIGATION
+  ════════════════════════════════════════ -->
   <nav id="navbar">
     <a href="#home" class="nav-brand">
       <div class="nav-brand-mark">JV</div>
       <span class="nav-brand-text">Jawahar Vijayakumar</span>
     </a>
-    <div class="nav-links" id="nav-links">
+
+    <div class="nav-links">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </div>
+
     <div class="nav-right">
       <a href="#contact" class="nav-cta">Hire Me</a>
       <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
@@ -37,7 +49,7 @@
     </div>
   </nav>
 
-  <!-- ══ MOBILE MENU ══ -->
+  <!-- Mobile Menu -->
   <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
     <a href="#about"      class="mob-link">About</a>
     <a href="#skills"     class="mob-link">Skills</a>
@@ -48,37 +60,47 @@
   </div>
   <div class="mob-overlay" id="mob-overlay"></div>
 
-  <!-- ══ HERO ══ -->
+  <!-- ════════════════════════════════════════
+       HERO
+  ════════════════════════════════════════ -->
   <section class="hero" id="home">
     <div class="hero-glow1"></div>
     <div class="hero-glow2"></div>
+
     <div class="hero-inner">
 
+      <!-- Left: Content -->
       <div class="hero-content">
         <div class="hero-badge fade-up">
           <span class="hero-dot"></span>
           Available for full-time opportunities
         </div>
+
         <h1 class="fade-up delay-1">
-          Crafting Beautiful<br />
+          Elevating Brands Through<br />
           <span class="serif-italic">digital experiences</span>
         </h1>
+
         <p class="hero-role fade-up delay-2">
-          <strong>Software Engineer</strong> at <strong>Quinte Financial Technologies</strong> · Chennai, India
+          <strong>Software Engineer</strong> at <strong>Quinte Financial Technologies</strong> based in Chennai, India
         </p>
+
         <p class="hero-desc fade-up delay-3">
-          As a Software Engineer at Quinte Financial Technologies, I focus on developing and maintaining responsive
-          websites using WordPress CMS. By managing installations, customizing themes, and configuring plugins, I
-          contribute to enhancing website functionality and performance. My work also includes implementing SEO
-          strategies and optimizing website speed to improve visibility and user experience.
+          As a Software Engineer at Quinte Financial Technologies, I focus on developing and maintaining responsive websites using WordPress CMS. By managing installations, customizing themes, 
+		  and configuring plugins, I contribute to enhancing website functionality and performance. My work also includes implementing SEO strategies and optimizing 
+		  website speed to improve visibility and user experience. 
         </p>
+
         <div class="hero-actions fade-up delay-4">
           <a href="#projects" class="btn-primary">
             View My Work
-            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
           </a>
           <a href="#contact" class="btn-outline">Get In Touch</a>
         </div>
+
         <div class="hero-stats-row fade-up delay-5">
           <div class="hero-stat">
             <div class="hero-stat-num">2<span>+</span></div>
@@ -99,353 +121,641 @@
         </div>
       </div>
 
+      <!-- Right: Profile Card -->
       <div class="hero-card fade-up delay-2">
         <div class="hero-card-avatar">JV</div>
         <div class="hero-card-name">Jawahar Vijayakumar</div>
         <div class="hero-card-title">Software Engineer · Chennai, India</div>
+
         <div class="hero-card-info">
-          <div class="info-row"><div class="info-icon">🎓</div>B.Tech CSE · 2022</div>
-          <div class="info-row"><div class="info-icon">💼</div>Open to work — Full-time</div>
-          <div class="info-row"><div class="info-icon">🌐</div>linkedin.com/in/jawaharv2001</div>
+          <div class="info-row">
+            <div class="info-icon">🎓</div>
+            B.Tech Computer Science Engineering · 2022
+          </div>
+          <div class="info-row">
+            <div class="info-icon">💼</div>
+            Open to work — Full-time
+          </div>
+          <div class="info-row">
+            <div class="info-icon">🌐</div>
+            linkedin.com/in/jawaharv2001
+          </div>
         </div>
+
         <div class="hero-card-skills">
           <span class="skill-chip">Web Development</span>
-          <span class="skill-chip">WordPress CMS</span>
-          <span class="skill-chip">SEO</span>
+          <span class="skill-chip">WordPress CMS | Page Builders | Plugins</span>
+          <span class="skill-chip">Search Engine Optimization</span>
           <span class="skill-chip">HTML | CSS</span>
           <span class="skill-chip">JavaScript</span>
-          <span class="skill-chip">Performance</span>
+          <span class="skill-chip">Website Performance Optimizations</span>
         </div>
+
         <a href="#contact" class="hero-card-btn">Let's connect →</a>
       </div>
 
     </div>
   </section>
 
-  <!-- ══ ABOUT ══ -->
+  <!-- ════════════════════════════════════════
+       ABOUT
+  ════════════════════════════════════════ -->
   <section class="section about-section" id="about">
     <div class="section-inner">
+
       <div class="section-header">
         <div class="section-tag">About Me</div>
-        <h2 class="section-title">Passionate about <em>great design</em><br class="hide-xs" /> and clean code</h2>
+        <h2 class="section-title">Passionate about <em>great design</em><br />and clean code</h2>
       </div>
+
       <div class="about-grid">
+
+        <!-- Bio -->
         <div class="about-text fade-up">
-          <p>Hi, I'm <strong>Jawahar V</strong> — a Software Engineer from Chennai, India with a strong passion for building interfaces that are not just functional, but genuinely delightful to use. I believe the best digital experiences live at the intersection of design thinking and engineering excellence.</p>
-          <p>As a Software Engineer at Quinte Financial Technologies, I focus on developing and maintaining responsive websites using WordPress CMS. By managing installations, customizing themes, and configuring plugins, I contribute to enhancing website functionality and performance. My work also includes implementing SEO strategies and optimizing website speed to improve visibility and user experience.</p>
-          <p>A BTech graduate in Computer Science from Vel Tech, Chennai, I bring a foundational understanding of programming and web development. With additional certifications in Java full-stack development and Python, I am committed to advancing my technical skills and contributing to innovative projects in dynamic tech environments.</p>
+          <p>
+            Hi, I'm <strong>Jawahar V</strong> — a Software Engineer from Chennai, India with a strong
+            passion for building interfaces that are not just functional, but genuinely delightful
+            to use. I believe the best digital experiences live at the intersection of design
+            thinking and engineering excellence.
+          </p>
+          <p>
+            As a Software Engineer at Quinte Financial Technologies, I focus on developing and maintaining responsive websites using WordPress CMS. 
+			By managing installations, customizing themes, and configuring plugins, I contribute to enhancing website functionality and performance. 
+			My work also includes implementing SEO strategies and optimizing website speed to improve visibility and user experience.  
+          </p>
+          <p>
+           A BTech graduate in Computer Science from Vel Tech, Chennai, I bring a foundational understanding of programming and web development. 
+		   With additional certifications in Java full-stack development and Python, I am committed to advancing my technical skills and contributing 
+		   to innovative projects in dynamic tech environments.
+          </p>
           <div class="about-cta-row">
             <a href="#" class="btn-dark">
-              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3" />
+              </svg>
               Download Resume
             </a>
-            <a href="https://linkedin.com/in/jawaharv2001" target="_blank" rel="noopener" class="btn-bordered">View LinkedIn →</a>
+            <a href="https://linkedin.com/in/jawaharv2001" target="_blank" rel="noopener" class="btn-bordered">
+              View LinkedIn →
+            </a>
           </div>
         </div>
+
+        <!-- Details -->
         <div class="about-details fade-up delay-2">
           <div class="detail-row">
             <div class="detail-icon">📍</div>
-            <div><div class="detail-label">Location</div><div class="detail-value">Chennai, Tamil Nadu</div><div class="detail-sub">India — open to remote &amp; relocation</div></div>
+            <div>
+              <div class="detail-label">Location</div>
+              <div class="detail-value">Chennai, Tamil Nadu</div>
+              <div class="detail-sub">India — open to remote &amp; relocation</div>
+            </div>
           </div>
           <div class="detail-row">
             <div class="detail-icon">🎓</div>
-            <div><div class="detail-label">Education</div><div class="detail-value">B.Tech — Computer Science Engineering</div><div class="detail-sub">Graduated 2022</div></div>
+            <div>
+              <div class="detail-label">Education</div>
+              <div class="detail-value">B.Tech — Computer Science Engineering</div>
+              <div class="detail-sub">Graduated 2022</div>
+            </div>
           </div>
           <div class="detail-row">
             <div class="detail-icon">💼</div>
-            <div><div class="detail-label">Experience</div><div class="detail-value">2+ Years</div><div class="detail-sub">Frontend / UI Development</div></div>
+            <div>
+              <div class="detail-label">Experience</div>
+              <div class="detail-value">2+ Years</div>
+              <div class="detail-sub">Frontend / UI Development</div>
+            </div>
           </div>
           <div class="detail-row">
             <div class="detail-icon">🗣️</div>
-            <div><div class="detail-label">Languages</div><div class="detail-value">English · Tamil</div><div class="detail-sub">Professional working proficiency</div></div>
+            <div>
+              <div class="detail-label">Languages</div>
+              <div class="detail-value">English · Tamil</div>
+              <div class="detail-sub">Professional working proficiency</div>
+            </div>
           </div>
           <div class="detail-row">
             <div class="detail-icon">🎯</div>
-            <div><div class="detail-label">Interests</div><div class="detail-value">Design Systems · Motion UI</div><div class="detail-sub">Open Source · Web Performance</div></div>
+            <div>
+              <div class="detail-label">Interests</div>
+              <div class="detail-value">Web Development · User Interface </div>
+              <div class="detail-sub">Open Source · Web Performance</div>
+            </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- ══ SKILLS ══ -->
+  <!-- ════════════════════════════════════════
+       SKILLS
+  ════════════════════════════════════════ -->
   <section class="section skills-section" id="skills">
     <div class="section-inner">
+
       <div class="section-header">
         <div class="section-tag">Technical Skills</div>
         <h2 class="section-title">Tools &amp; technologies <em>I work with</em></h2>
         <p class="section-subtitle">A well-rounded toolkit spanning frontend frameworks, design tooling, and backend integration.</p>
       </div>
+
       <div class="skills-grid">
+
         <div class="skill-card fade-up">
           <div class="skill-card-icon">⚛️</div>
           <div class="skill-card-title">Frontend Frameworks</div>
           <div class="skill-card-desc">Building modern component-driven apps with robust architecture, state management, and performance optimisations.</div>
           <div class="skill-tags-list">
-            <span class="skill-tag primary">React.js</span><span class="skill-tag primary">Next.js</span><span class="skill-tag primary">TypeScript</span><span class="skill-tag">Vue.js</span><span class="skill-tag">JavaScript ES6+</span>
+            <span class="skill-tag primary">React.js</span>
+            <span class="skill-tag primary">TypeScript</span>
+            <span class="skill-tag">JavaScript ES6+</span>
           </div>
         </div>
+
         <div class="skill-card fade-up delay-1">
           <div class="skill-card-icon">🎨</div>
           <div class="skill-card-title">Styling &amp; UI Design</div>
           <div class="skill-card-desc">Crafting visually refined, responsive interfaces with modern CSS tooling. Pixel-perfect at every breakpoint.</div>
           <div class="skill-tags-list">
-            <span class="skill-tag primary">Tailwind CSS</span><span class="skill-tag primary">CSS3 / SCSS</span><span class="skill-tag">Framer Motion</span><span class="skill-tag">Styled Components</span><span class="skill-tag">CSS Animations</span>
+            <span class="skill-tag primary">CSS3 / SCSS</span>
+            <span class="skill-tag">Styled Components</span>
+            <span class="skill-tag">CSS Animations</span>
           </div>
         </div>
+
         <div class="skill-card fade-up delay-2">
           <div class="skill-card-icon">🔧</div>
           <div class="skill-card-title">Dev Tools &amp; Workflow</div>
           <div class="skill-card-desc">Shipping production-ready code with confidence using industry-standard CI/CD tooling and version control.</div>
           <div class="skill-tags-list">
-            <span class="skill-tag primary">Git / GitHub</span><span class="skill-tag primary">Vite / Webpack</span><span class="skill-tag">Vercel / Netlify</span><span class="skill-tag">VS Code</span><span class="skill-tag">npm / yarn</span>
+            <span class="skill-tag primary">Git / GitHub</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">npm / yarn</span>
           </div>
         </div>
+
         <div class="skill-card fade-up delay-1">
           <div class="skill-card-icon">🖥️</div>
           <div class="skill-card-title">Design &amp; Prototyping</div>
           <div class="skill-card-desc">Bridging design and development — wireframes to interactive prototypes and scalable design systems.</div>
           <div class="skill-tags-list">
-            <span class="skill-tag primary">Figma</span><span class="skill-tag">Design Systems</span><span class="skill-tag">Component Design</span><span class="skill-tag">Storybook</span>
+            <span class="skill-tag primary">Figma</span>
+            <span class="skill-tag">Design Systems</span>
+            <span class="skill-tag">Component Design</span>
+            <span class="skill-tag">Storybook</span>
           </div>
         </div>
+
         <div class="skill-card fade-up delay-2">
           <div class="skill-card-icon">🔌</div>
           <div class="skill-card-title">Backend &amp; APIs</div>
           <div class="skill-card-desc">Full-stack awareness for seamless frontend-backend integration — REST APIs, realtime data, and databases.</div>
           <div class="skill-tags-list">
-            <span class="skill-tag primary">Node.js</span><span class="skill-tag">Express.js</span><span class="skill-tag">REST APIs</span><span class="skill-tag">MongoDB</span><span class="skill-tag">Firebase</span>
+            <span class="skill-tag primary">Node.js</span>
+            <span class="skill-tag">REST APIs</span>
           </div>
         </div>
+
         <div class="skill-card fade-up delay-3">
           <div class="skill-card-icon">♿</div>
           <div class="skill-card-title">Accessibility &amp; Performance</div>
           <div class="skill-card-desc">Every interface I build is accessible and performant — WCAG compliant, lighthouse-optimised, and semantic first.</div>
           <div class="skill-tags-list">
-            <span class="skill-tag primary">WCAG 2.1</span><span class="skill-tag">Semantic HTML</span><span class="skill-tag">Core Web Vitals</span><span class="skill-tag">Lazy Loading</span><span class="skill-tag">SEO</span>
+            <span class="skill-tag primary">WCAG 2.1</span>
+            <span class="skill-tag">Semantic HTML</span>
+            <span class="skill-tag">Core Web Vitals</span>
+            <span class="skill-tag">Lazy Loading</span>
+            <span class="skill-tag">SEO</span>
           </div>
         </div>
+
       </div>
     </div>
   </section>
 
   <div class="section-divider"></div>
 
-  <!-- ══ EXPERIENCE ══ -->
+  <!-- ════════════════════════════════════════
+       EXPERIENCE
+  ════════════════════════════════════════ -->
   <section class="section experience-section" id="experience">
     <div class="section-inner">
+
       <div class="section-header">
         <div class="section-tag">Work Experience</div>
         <h2 class="section-title">Professional <em>journey</em></h2>
         <p class="section-subtitle">A track record of building quality software across organisations of different sizes.</p>
       </div>
+
       <div class="exp-timeline">
         <div class="exp-line"></div>
+
+        <!-- Job 1 -->
         <div class="exp-item fade-up">
           <div class="exp-dot">💼</div>
           <div class="exp-body">
             <div class="exp-header">
-              <div><div class="exp-role-title">Software Engineer</div><div class="exp-company">Quinte Financial Technologies · Full-time</div></div>
+              <div>
+                <div class="exp-role-title">Software Engineer</div>
+                <div class="exp-company">Quinte Financial Technologies · Full-time</div>
+              </div>
               <span class="exp-badge">Present</span>
             </div>
             <div class="exp-period">Jan 2025 — Present · Chennai, India</div>
             <div class="exp-desc">
-              • Developed and maintained responsive websites using WordPress CMS, ensuring optimal performance and user experience.<br>
-              • Managed WordPress installations, theme customizations, and plugin configurations to enhance site functionality.<br>
-              • Implemented SEO strategies and website speed optimization techniques to improve site visibility and performance.
+             • Developed and maintained responsive websites using WordPress CMS, ensuring optimal performance and user experience.<br> 
+             • Managed WordPress installations, theme customizations, and plugin configurations to enhance site functionality.<br>  
+             • Implemented SEO strategies and website speed optimization techniques to improve site visibility and performance.
             </div>
             <div class="exp-skills">
-              <span class="exp-skill-tag">Website Development</span><span class="exp-skill-tag">WordPress</span><span class="exp-skill-tag">SEO</span><span class="exp-skill-tag">Performance Optimization</span>
+              <span class="exp-skill-tag">Website Development</span>
+              <span class="exp-skill-tag">WordPress CMS | Page Builders | Plugins</span>
+              <span class="exp-skill-tag">Search Engine Optimization</span>
+              <span class="exp-skill-tag">HTML | CSS</span>
+              <span class="exp-skill-tag">JavaScript</span>
             </div>
           </div>
         </div>
+
+        <!-- Job 2 -->
         <div class="exp-item fade-up delay-1">
-          <div class="exp-dot">💻</div>
+          <div class="exp-dot">🚀</div>
           <div class="exp-body">
             <div class="exp-header">
-              <div><div class="exp-role-title">Junior Frontend Developer</div><div class="exp-company">Previous Role · Full-time</div></div>
-              <span class="exp-badge gold">Completed</span>
+              <div>
+                <div class="exp-role-title">Trainee</div>
+                <div class="exp-company">Aithent Technologies Private Limited</div>
+              </div>
+              <span class="exp-badge gold">Past</span>
             </div>
             <div class="exp-period">Nov 2023 — Dec 2024 · Onsite</div>
             <div class="exp-desc">
-              • Developed responsive web solutions using WordPress CMS, enhancing user experience and site functionality.<br>
-              • Assisted in React development tasks, including updating components and managing props/state.<br>
-              • Collaborated with developers to troubleshoot and fix front-end bugs in React applications.
+               • Developed responsive web solutions using WordPress CMS, enhancing user experience and site functionality.<br>
+               • Assisted in React development tasks, including updating components and managing props/state.<br>  
+               • Collaborated with developers to troubleshoot and fix front-end bugs in React applications.
             </div>
             <div class="exp-skills">
-              <span class="exp-skill-tag">WordPress</span><span class="exp-skill-tag">Website Development</span><span class="exp-skill-tag">HTML | CSS</span><span class="exp-skill-tag">JavaScript</span><span class="exp-skill-tag">React</span>
+              <span class="exp-skill-tag">WordPress</span>
+              <span class="exp-skill-tag">Website Development</span>
+              <span class="exp-skill-tag">HTML | CSS</span>
+              <span class="exp-skill-tag">JavaScript</span>
+              <span class="exp-skill-tag">React</span>
             </div>
           </div>
         </div>
+
+        <!-- Job 3 
+        <div class="exp-item fade-up delay-2">
+          <div class="exp-dot">💻</div>
+          <div class="exp-body">
+            <div class="exp-header">
+              <div>
+                <div class="exp-role-title">Freelance UI Developer</div>
+                <div class="exp-company">Independent · Contract</div>
+              </div>
+              <span class="exp-badge gold">Completed</span>
+            </div>
+            <div class="exp-period">📅 2021 — 2023 · Remote</div>
+            <div class="exp-desc">
+              Designed and developed websites for small businesses and startups across India. Managed full
+              project lifecycle from requirement gathering and wireframing through to deployment. Delivered
+              10+ projects on time with a 100% client satisfaction rate.
+            </div>
+            <div class="exp-skills">
+              <span class="exp-skill-tag">HTML5 / CSS3</span>
+              <span class="exp-skill-tag">JavaScript</span>
+              <span class="exp-skill-tag">WordPress</span>
+              <span class="exp-skill-tag">Figma</span>
+            </div>
+          </div>
+        </div>-->
+
       </div>
     </div>
   </section>
 
-  <!-- ══ PROJECTS ══ -->
-  <section class="section projects-section" id="projects">
+  <!-- ════════════════════════════════════════
+       PROJECTS
+  ════════════════════════════════════════ -->
+  <!-- <section class="section projects-section" id="projects">
     <div class="section-inner">
+
       <div class="section-header">
         <div class="section-tag">Selected Work</div>
         <h2 class="section-title">Projects I've <em>built</em></h2>
         <p class="section-subtitle">A curated collection of production-grade projects showcasing frontend, design systems, and full-stack integration.</p>
       </div>
+
       <div class="projects-grid">
+
         <div class="project-card fade-up">
-          <div class="project-thumb" style="background:linear-gradient(135deg,#1a2260,#3b6ef6)">🧩<div class="project-thumb-overlay"><a href="#" class="project-thumb-btn">View →</a></div></div>
+          <div class="project-thumb" style="background: linear-gradient(135deg, #1a2260, #3b6ef6);">
+            🧩
+            <div class="project-thumb-overlay">
+              <a href="#" class="project-thumb-btn">View →</a>
+            </div>
+          </div>
           <div class="project-body">
-            <div class="project-number">Project · 01</div><div class="project-title">Design System Kit</div>
+            <div class="project-number">Project · 01</div>
+            <div class="project-title">Design System Kit</div>
             <div class="project-desc">A comprehensive React + Tailwind component library with 50+ components, dark/light themes, and full Storybook documentation used across multiple products.</div>
-            <div class="project-tags"><span class="project-tag">React</span><span class="project-tag">TypeScript</span><span class="project-tag">Storybook</span><span class="project-tag">Tailwind</span></div>
+            <div class="project-tags">
+              <span class="project-tag">React</span>
+              <span class="project-tag">TypeScript</span>
+              <span class="project-tag">Storybook</span>
+              <span class="project-tag">Tailwind</span>
+            </div>
           </div>
-          <div class="project-footer"><a href="#" class="project-link">🔗 Live Demo</a><a href="#" class="project-link">⌥ GitHub</a></div>
+          <div class="project-footer">
+            <a href="#" class="project-link">🔗 Live Demo</a>
+            <a href="#" class="project-link">⌥ GitHub</a>
+          </div>
         </div>
+
         <div class="project-card fade-up delay-1">
-          <div class="project-thumb" style="background:linear-gradient(135deg,#0d2d1a,#16a34a)">📊<div class="project-thumb-overlay"><a href="#" class="project-thumb-btn">View →</a></div></div>
+          <div class="project-thumb" style="background: linear-gradient(135deg, #0d2d1a, #16a34a);">
+            📊
+            <div class="project-thumb-overlay">
+              <a href="#" class="project-thumb-btn">View →</a>
+            </div>
+          </div>
           <div class="project-body">
-            <div class="project-number">Project · 02</div><div class="project-title">E-Commerce Dashboard</div>
+            <div class="project-number">Project · 02</div>
+            <div class="project-title">E-Commerce Dashboard</div>
             <div class="project-desc">Real-time analytics dashboard with live charts, order management, and role-based access for 3 user tiers. Used by an active e-commerce platform.</div>
-            <div class="project-tags"><span class="project-tag">Next.js</span><span class="project-tag">Recharts</span><span class="project-tag">REST API</span><span class="project-tag">RBAC</span></div>
+            <div class="project-tags">
+              <span class="project-tag">Next.js</span>
+              <span class="project-tag">Recharts</span>
+              <span class="project-tag">REST API</span>
+              <span class="project-tag">RBAC</span>
+            </div>
           </div>
-          <div class="project-footer"><a href="#" class="project-link">🔗 Live Demo</a><a href="#" class="project-link">⌥ GitHub</a></div>
+          <div class="project-footer">
+            <a href="#" class="project-link">🔗 Live Demo</a>
+            <a href="#" class="project-link">⌥ GitHub</a>
+          </div>
         </div>
+
         <div class="project-card fade-up delay-2">
-          <div class="project-thumb" style="background:linear-gradient(135deg,#2d1040,#7c3aed)">🚀<div class="project-thumb-overlay"><a href="#" class="project-thumb-btn">View →</a></div></div>
+          <div class="project-thumb" style="background: linear-gradient(135deg, #2d1040, #7c3aed);">
+            🚀
+            <div class="project-thumb-overlay">
+              <a href="#" class="project-thumb-btn">View →</a>
+            </div>
+          </div>
           <div class="project-body">
-            <div class="project-number">Project · 03</div><div class="project-title">Portfolio Builder App</div>
+            <div class="project-number">Project · 03</div>
+            <div class="project-title">Portfolio Builder App</div>
             <div class="project-desc">Drag-and-drop portfolio builder with live preview, 8 custom themes, and one-click deployment to custom domains. 200+ active users.</div>
-            <div class="project-tags"><span class="project-tag">React</span><span class="project-tag">Firebase</span><span class="project-tag">Framer Motion</span><span class="project-tag">DnD Kit</span></div>
+            <div class="project-tags">
+              <span class="project-tag">React</span>
+              <span class="project-tag">Firebase</span>
+              <span class="project-tag">Framer Motion</span>
+              <span class="project-tag">DnD Kit</span>
+            </div>
           </div>
-          <div class="project-footer"><a href="#" class="project-link">🔗 Live Demo</a><a href="#" class="project-link">⌥ GitHub</a></div>
+          <div class="project-footer">
+            <a href="#" class="project-link">🔗 Live Demo</a>
+            <a href="#" class="project-link">⌥ GitHub</a>
+          </div>
         </div>
+
         <div class="project-card fade-up">
-          <div class="project-thumb" style="background:linear-gradient(135deg,#2d1a08,#ea580c)">🏪<div class="project-thumb-overlay"><a href="#" class="project-thumb-btn">View →</a></div></div>
+          <div class="project-thumb" style="background: linear-gradient(135deg, #2d1a08, #ea580c);">
+            🏪
+            <div class="project-thumb-overlay">
+              <a href="#" class="project-thumb-btn">View →</a>
+            </div>
+          </div>
           <div class="project-body">
-            <div class="project-number">Project · 04</div><div class="project-title">SaaS Landing Pages</div>
+            <div class="project-number">Project · 04</div>
+            <div class="project-title">SaaS Landing Pages</div>
             <div class="project-desc">5 production-grade landing pages for SaaS products with custom scroll animations, A/B test variants, and full CMS integration.</div>
-            <div class="project-tags"><span class="project-tag">HTML/CSS</span><span class="project-tag">GSAP</span><span class="project-tag">Tailwind</span><span class="project-tag">CMS</span></div>
+            <div class="project-tags">
+              <span class="project-tag">HTML/CSS</span>
+              <span class="project-tag">GSAP</span>
+              <span class="project-tag">Tailwind</span>
+              <span class="project-tag">CMS</span>
+            </div>
           </div>
-          <div class="project-footer"><a href="#" class="project-link">🔗 Live Demo</a><a href="#" class="project-link">⌥ GitHub</a></div>
+          <div class="project-footer">
+            <a href="#" class="project-link">🔗 Live Demo</a>
+            <a href="#" class="project-link">⌥ GitHub</a>
+          </div>
         </div>
+
         <div class="project-card fade-up delay-1">
-          <div class="project-thumb" style="background:linear-gradient(135deg,#0f2d2d,#0891b2)">✅<div class="project-thumb-overlay"><a href="#" class="project-thumb-btn">View →</a></div></div>
+          <div class="project-thumb" style="background: linear-gradient(135deg, #0f2d2d, #0891b2);">
+            ✅
+            <div class="project-thumb-overlay">
+              <a href="#" class="project-thumb-btn">View →</a>
+            </div>
+          </div>
           <div class="project-body">
-            <div class="project-number">Project · 05</div><div class="project-title">Task Management UI</div>
+            <div class="project-number">Project · 05</div>
+            <div class="project-title">Task Management UI</div>
             <div class="project-desc">Notion-inspired task manager with Kanban boards, rich-text editing, and real-time team collaboration powered by WebSockets.</div>
-            <div class="project-tags"><span class="project-tag">React</span><span class="project-tag">DnD Kit</span><span class="project-tag">MongoDB</span><span class="project-tag">WebSockets</span></div>
+            <div class="project-tags">
+              <span class="project-tag">React</span>
+              <span class="project-tag">DnD Kit</span>
+              <span class="project-tag">MongoDB</span>
+              <span class="project-tag">WebSockets</span>
+            </div>
           </div>
-          <div class="project-footer"><a href="#" class="project-link">🔗 Live Demo</a><a href="#" class="project-link">⌥ GitHub</a></div>
+          <div class="project-footer">
+            <a href="#" class="project-link">🔗 Live Demo</a>
+            <a href="#" class="project-link">⌥ GitHub</a>
+          </div>
         </div>
+
         <div class="project-card fade-up delay-2">
-          <div class="project-thumb" style="background:linear-gradient(135deg,#1a0f2e,#db2777)">📱<div class="project-thumb-overlay"><a href="#" class="project-thumb-btn">View →</a></div></div>
-          <div class="project-body">
-            <div class="project-number">Project · 06</div><div class="project-title">Restaurant Booking App</div>
-            <div class="project-desc">Full-stack reservation system with real-time seat availability, email confirmations, and an admin panel for managing bookings.</div>
-            <div class="project-tags"><span class="project-tag">Next.js</span><span class="project-tag">Node.js</span><span class="project-tag">PostgreSQL</span><span class="project-tag">Nodemailer</span></div>
+          <div class="project-thumb" style="background: linear-gradient(135deg, #1a0f2e, #db2777);">
+            📱
+            <div class="project-thumb-overlay">
+              <a href="#" class="project-thumb-btn">View →</a>
+            </div>
           </div>
-          <div class="project-footer"><a href="#" class="project-link">🔗 Live Demo</a><a href="#" class="project-link">⌥ GitHub</a></div>
+          <div class="project-body">
+            <div class="project-number">Project · 06</div>
+            <div class="project-title">Restaurant Booking App</div>
+            <div class="project-desc">Full-stack reservation system with real-time seat availability, email confirmations, and an admin panel for managing bookings.</div>
+            <div class="project-tags">
+              <span class="project-tag">Next.js</span>
+              <span class="project-tag">Node.js</span>
+              <span class="project-tag">PostgreSQL</span>
+              <span class="project-tag">Nodemailer</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <a href="#" class="project-link">🔗 Live Demo</a>
+            <a href="#" class="project-link">⌥ GitHub</a>
+          </div>
         </div>
+
       </div>
     </div>
-  </section>
+  </section> -->
 
-  <!-- ══ EDUCATION ══ -->
+  <!-- ════════════════════════════════════════
+       EDUCATION
+  ════════════════════════════════════════ -->
   <section class="section education-section" id="education">
     <div class="section-inner">
+
       <div class="section-header">
         <div class="section-tag">Education &amp; Certifications</div>
         <h2 class="section-title">Academic <em>background</em></h2>
       </div>
+
       <div class="education-grid">
+
         <div class="edu-card fade-up">
           <div class="edu-icon">🎓</div>
-          <div class="edu-content">
+          <div>
             <div class="edu-degree">B.Tech — Computer Science Engineering</div>
-            <div class="edu-school">Vel Tech Rangarajan Dr. Sagunthala R&D Institute of Science &amp; Technology</div>
+            <div class="edu-school">Vel Tech Rangarajan Dr. Sagunthala R & D Institute of Science & Technology</div>
             <div class="edu-year">📅 2018 — 2022</div>
             <div class="edu-desc">Core CS fundamentals — data structures, algorithms, OS, networking, and software engineering. Final year project: real-time web application using React and Node.js.</div>
           </div>
         </div>
+
         <div class="edu-card fade-up delay-1">
           <div class="edu-icon">📜</div>
-          <div class="edu-content">
-            <div class="edu-degree">Certification — Java Full Stack Development</div>
+          <div>
+            <div class="edu-degree">Certification , Java Full stack development</div>
             <div class="edu-school">Accord Infomatrix</div>
             <div class="edu-year">📅 2023</div>
-            <div class="edu-desc">Java Payroll Management System with Core Java/MySQL via JDBC. Web Design projects — Donate Webpage &amp; AppsMarket Webpage.</div>
+            <div class="edu-desc">Activities and societies: Java-Payroll Management System: Payroll Management System is built with Core Java/MySQL database. 
+			It has featured with all the basic functionalities of a Payroll System used by the company. 
+			Here, Database will beconnected by use of JDBC connectivity and specific payroll operations will be performed by Employee and Employer.<br>  
+			Tools: Eclipse IDE Version 2023-06, WampServer Version 2.4 MySQL Connector<br><br>
+            Web Design - Donate Webpage, AppsMarket Webpage.<br>
+			Tools: Visual studio Code, WebBrowser
+        </div>
           </div>
         </div>
+
         <div class="edu-card fade-up delay-1">
           <div class="edu-icon">⚛️</div>
-          <div class="edu-content">
+          <div>
             <div class="edu-degree">Robotic Process Automation (RPA) Virtual Internship</div>
-            <div class="edu-school">SS&amp;C Blue Prism</div>
+            <div class="edu-school">SS&C Blue Prism</div>
             <div class="edu-year">📅 2022</div>
-            <div class="edu-desc">Creation of Login – Launch – Close of Centrix Data Solutions using process and business objects in Blueprism RPA Software.</div>
+            <div class="edu-desc">Creation of Login - Launch - Close of Centrix Data Solutions using process and business objects in Blueprism Robotic Process Automation Software.</div>
           </div>
         </div>
+
         <div class="edu-card fade-up delay-2">
-          <div class="edu-icon">☁️</div>
-          <div class="edu-content">
+          <div class="edu-icon">🎨</div>
+          <div>
             <div class="edu-degree">AWS Academy Cloud Foundations</div>
             <div class="edu-school">Amazon Web Services (AWS)</div>
             <div class="edu-year">📅 2021</div>
-            <div class="edu-desc">AWS Architecture, Cloud, Core Services, Pricing and Support fundamentals.</div>
+            <div class="edu-desc">AWS Architecture, AWS Cloud, AWS Core Services, AWS Pricing and AWS Support.</div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- ══ CONTACT ══ -->
+  <!-- ════════════════════════════════════════
+       CONTACT
+  ════════════════════════════════════════ -->
   <section class="section contact-section" id="contact">
     <div class="section-inner">
+
       <div class="section-header">
         <div class="section-tag">Contact</div>
         <h2 class="section-title">Let's work <em>together</em></h2>
         <p class="section-subtitle">Have a role or project in mind? I'd love to hear from you — send a message or connect on LinkedIn.</p>
       </div>
+
       <div class="contact-grid">
+
+        <!-- Social Links -->
         <div class="contact-links fade-up">
-          <a href="/cdn-cgi/l/email-protection#d9b3b8aeb8b1b8abafebe9e9e899beb4b8b0b5f7bab6b4" class="contact-link-card">
+          <a href="mailto:jawaharv2001@gmail.com" class="contact-link-card">
             <div class="contact-link-icon">✉️</div>
-            <div class="contact-link-text"><div class="contact-link-label">Email</div><div class="contact-link-value"><span class="__cf_email__" data-cfemail="bad0dbcddbd2dbc8cc888a8a8bfaddd7dbd3d694d9d5d7">[email&#160;protected]</span></div></div>
+            <div>
+              <div class="contact-link-label">Email</div>
+              <div class="contact-link-value"><!--<span class="__cf_email__" data-cfemail="f19b90869099908387c3c1c1c0b1969c90989ddf929e9c">-->jawaharv2001@gmail.com</span></div>
+            </div>
             <div class="contact-link-arrow">↗</div>
           </a>
           <a href="https://linkedin.com/in/jawaharv2001" target="_blank" rel="noopener" class="contact-link-card">
             <div class="contact-link-icon">💼</div>
-            <div class="contact-link-text"><div class="contact-link-label">LinkedIn</div><div class="contact-link-value">linkedin.com/in/jawaharv2001</div></div>
+            <div>
+              <div class="contact-link-label">LinkedIn</div>
+              <div class="contact-link-value">linkedin.com/in/jawaharv2001</div>
+            </div>
             <div class="contact-link-arrow">↗</div>
           </a>
-          <a href="https://github.com/jawaharv2001" target="_blank" rel="noopener" class="contact-link-card">
+          <a href="https://github.com/JAWAHAR-CG" target="_blank" rel="noopener" class="contact-link-card">
             <div class="contact-link-icon">🐙</div>
-            <div class="contact-link-text"><div class="contact-link-label">GitHub</div><div class="contact-link-value">github.com/jawaharv2001</div></div>
+            <div>
+              <div class="contact-link-label">GitHub</div>
+              <div class="contact-link-value">https://github.com/JAWAHAR-CG</div>
+            </div>
             <div class="contact-link-arrow">↗</div>
           </a>
           <a href="#" class="contact-link-card">
             <div class="contact-link-icon">📄</div>
-            <div class="contact-link-text"><div class="contact-link-label">Resume</div><div class="contact-link-value">Download PDF — Updated 2025</div></div>
+            <div>
+              <div class="contact-link-label">Resume</div>
+              <div class="contact-link-value">Download PDF</div>
+            </div>
             <div class="contact-link-arrow">↓</div>
           </a>
         </div>
+
+        <!-- Contact Form -->
         <form class="contact-form fade-up delay-2" id="contact-form">
           <div class="form-row">
-            <div class="form-group"><label class="form-label">Your Name</label><input class="form-input" type="text" placeholder="John Smith" required /></div>
-            <div class="form-group"><label class="form-label">Email Address</label><input class="form-input" type="email" placeholder="john@company.com" required /></div>
+            <div class="form-group">
+              <label class="form-label">Your Name</label>
+              <input class="form-input" type="text" name="from_name" placeholder="John Smith" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Email Address</label>
+              <input class="form-input" type="email" name="from_email" placeholder="john@company.com" required />
+            </div>
           </div>
-          <div class="form-group"><label class="form-label">Subject</label><input class="form-input" type="text" placeholder="Full-time UI Developer role" /></div>
-          <div class="form-group"><label class="form-label">Message</label><textarea class="form-textarea" placeholder="Tell me about the opportunity or project..." required></textarea></div>
+          <div class="form-group">
+            <label class="form-label">Subject</label>
+            <input class="form-input" type="text" name="subject" placeholder="Full-time UI Developer role" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Message</label>
+            <textarea class="form-textarea" name="message" placeholder="Tell me about the opportunity or project..." required></textarea>
+          </div>
           <button type="submit" class="form-submit" id="submit-btn">Send Message →</button>
         </form>
+
       </div>
     </div>
   </section>
 
-  <!-- ══ FOOTER ══ -->
+  <!-- ════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════ -->
   <footer>
     <a href="#home" class="footer-brand">
       <div class="footer-brand-mark">JV</div>
       <span class="footer-brand-text">Jawahar V · Software Engineer</span>
     </a>
     <div class="footer-links">
-      <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
-    </
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <p class="footer-copy">&copy; 2025 Jawahar Vijayakumar. All rights reserved.</p>
+  </footer>
+
+  <!-- Main Script (must be last) -->
+  <script src="script.js"></script>
+</body>
+</html>
