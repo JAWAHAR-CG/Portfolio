@@ -95,23 +95,48 @@ function initSmoothScroll() {
   });
 }
 
-/* ── CONTACT FORM ── */
+/* ── CONTACT FORM (EmailJS) ── */
+emailjs.init('nnVecxE2BxSVp-sRT');
+
 function handleFormSubmit(e) {
   e.preventDefault();
-  const btn = document.getElementById('submit-btn');
+  const btn  = document.getElementById('submit-btn');
+  const form = e.target;
   const orig = btn.textContent;
+
+  // Collect form values
+  const templateParams = {
+    from_name:  form.querySelector('input[type="text"]').value,
+    from_email: form.querySelector('input[type="email"]').value,
+    subject:    form.querySelectorAll('input[type="text"]')[1]?.value || '(no subject)',
+    message:    form.querySelector('textarea').value,
+    to_email:   'jawaharv2001@gmail.com'
+  };
+
   btn.textContent = 'Sending…';
   btn.disabled = true;
-  setTimeout(() => {
-    btn.textContent = '✓ Message Sent!';
-    btn.style.background = 'linear-gradient(135deg,#16a34a,#15803d)';
-    e.target.reset();
-    setTimeout(() => {
-      btn.textContent = orig;
+
+  emailjs.send('service_kgeyoju', 'template_p9uidgr', templateParams)
+    .then(() => {
+      btn.textContent = '✓ Message Sent!';
+      btn.style.background = 'linear-gradient(135deg,#16a34a,#15803d)';
+      form.reset();
+      setTimeout(() => {
+        btn.textContent = orig;
+        btn.disabled = false;
+        btn.style.background = '';
+      }, 3000);
+    })
+    .catch((err) => {
+      console.error('EmailJS error:', err);
+      btn.textContent = '✗ Failed — Try Again';
+      btn.style.background = 'linear-gradient(135deg,#dc2626,#b91c1c)';
       btn.disabled = false;
-      btn.style.background = '';
-    }, 3000);
-  }, 1200);
+      setTimeout(() => {
+        btn.textContent = orig;
+        btn.style.background = '';
+      }, 3000);
+    });
 }
 
 /* ── INIT ── */
